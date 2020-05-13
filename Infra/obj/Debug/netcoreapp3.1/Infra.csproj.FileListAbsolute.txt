@@ -1,0 +1,5 @@
+C:\Users\Matheus\source\repos\AvalTecnSystem\Infra\bin\Debug\netcoreapp3.1\Infra.deps.json
+C:\Users\Matheus\source\repos\AvalTecnSystem\Infra\bin\Debug\netcoreapp3.1\Infra.dll
+C:\Users\Matheus\source\repos\AvalTecnSystem\Infra\obj\Debug\netcoreapp3.1\Infra.csprojAssemblyReference.cache
+C:\Users\Matheus\source\repos\AvalTecnSystem\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfoInputs.cache
+C:\Users\Matheus\source\repos\AvalTecnSystem\Infra\obj\Debug\netcoreapp3.1\Infra.AssemblyInfo.cs

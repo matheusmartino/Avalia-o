@@ -1,0 +1,61 @@
+﻿<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <h2>Cadastro Categorias</h2>
+    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Nova Categoria</button><br /><br />
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Categoria
+                </th>
+                <th>
+                    Ação
+                </th>
+            </tr>
+        </thead>
+        <tbody class="tbody" id="tblCategoria">
+        </tbody>
+    </table>
+    <ul class="pagination float-right" id="pagination">      
+    </ul>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Nova Categoria</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="frmCategoria">
+                    <div class="form-group">
+                        <label for="EmployeeId">ID</label>
+                        <input type="text" class="form-control" id="CategoriaId" disabled="disabled" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Categoria Descrição</label>
+                        <input type="text" class="form-control" id="Categoria" placeholder="Categoria" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Novo</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Alterar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/scripts/Categoria.js"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
