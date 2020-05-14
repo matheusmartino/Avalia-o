@@ -9,18 +9,20 @@ Projeto de teste em AspNet Core
 - ASP.NET Core 2.2
 - Uso de Repository Pattern 
 - Uso de [Entity Framework Core]('https://docs.microsoft.com/pt-br/ef/core/'), mapeando as entididades com o repositório
-- Unit and integration tests using Moq, MSTest, and Mvc.Testing
 
-# How to run locally
+# Como Rodar Localmente
 This setup is for Windows users but this solution will work cross-platform (Mac/Linux).
 1. Install Visual Studio 2019 Enterprise (for backend).
 2. Install .NET Core SDK 2.2 for VS2019.
-3. Install Visual Studio Code (for frontend).
 4. Open the `.sln` file and wait for nuget package restore.
-5. Open **Test Explorer** and click "Run All" to execute test suite.
+5. Configure Banco de dados MySql Local passando as entradas no appsettings.json
+'''
+   "ConexaoMySql": {
+    "MySqlConnectionString": "Server=localhost;DataBase=AvalTecSysDb;Uid=*******;Pwd=********"
+  }
+'''
 6. Press F5 button on your keyboard to launch the backend in debugging mode and your browser should open `https://localhost:44345/swagger`.
-7. Open `client` folder in VS Code.
-8. In the **Terminal**, execute these 2 commands:
+8. Open Manage Console Application **Terminal**, execute these 2 commands:
 ```
 npm install
 npm start
