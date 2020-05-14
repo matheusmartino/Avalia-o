@@ -1,3 +1,3 @@
-# ![Bot Framework Samples](./docs/media/BotFrameworkSamples_header.png)
+# ![Bot Framework Samples]()
 ## Overview
 Projeto realizado em DotNet Core
