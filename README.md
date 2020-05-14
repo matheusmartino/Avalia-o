@@ -1,12 +1,12 @@
 # Overview
-Projeto de teste em AspNet Core
+Projeto de teste em Asp.Net Core, com o 2 entidades(Produto e Categoria), com realização de CRUD.
 
 # Frontend Architecture
 - MVC com JQuery
 - Requisições Ajax camada Backend Api
 
 # Backend Architecture
-- ASP.NET Core 2.2
+- ASP.NET [Core 2.2](https://docs.microsoft.com/pt-br/aspnet/core/release-notes/aspnetcore-2.2)
 - Uso de Repository Pattern 
 - Uso de [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/), mapeando as entididades com o repositório
 
