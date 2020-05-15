@@ -7,7 +7,8 @@ $(document).ready(function () {
 });
 
 // Produtos páginados
-function loadDataPaginationPrd(pag) {
+function loadDataPaginationPrd(pag) { 
+   // $.blockUI({ message: 'Teste' });
     $.ajax({
         url: "produtos/paginacao/" + pag,
         type: "GET",
@@ -46,7 +47,7 @@ function loadDataPaginationPrd(pag) {
             console.log(errormessage);
             alert(errormessage.responseText);
         }
-    });
+    });      
 }
 
 //Novo Produto
@@ -54,7 +55,7 @@ function AddPrd() {
     var res = validatePrd();
     if (res == false) {
         return false;
-    }
+    }    
     var prdObj = {
         ProdutoId: 0,
         CategoriaId: $('#DdlCategoria').children(":selected").attr("id"),
@@ -85,7 +86,7 @@ function AddPrd() {
 //Exclusão Produto
 function DeletePrd(id) {
     var ans = confirm("Você deseja excluir este Produto?");
-    if (ans) {
+    if (ans) {        
         $.ajax({
             url: "produtos/excluir/" + id,
             type: "DELETE",
@@ -140,7 +141,7 @@ function UpdatePrd() {
         ProdutoNome: $('#Produto').val(),
         ProdutoId: $('#ProdutoId').val(),
         ProdutoValor: $('#Valor').val(),
-    };
+    };    
     $.ajax({
         url: "produtos/salvar",
         data: JSON.stringify(catgrObj),
@@ -188,10 +189,14 @@ function clearTextBoxPrd() {
 
 //Validando Preenchimento
 function validatePrd() {
+    $(".error").remove();
+
     var isValid = true;
+
     if ($('#Produto').val().trim() == "") {
 
         $('#Produto').css('border-color', 'Red');
+        $('#Produto').after('<span class="error" style="font-weight:bold;font-style:italic" >Produto é Obrigatório!</span>');
         
         isValid = false;
     }
@@ -201,7 +206,8 @@ function validatePrd() {
 
     if ($('#Valor').val().trim() == "") {
 
-        $('#Valor').css('border-color', 'Red');      
+        $('#Valor').css('border-color', 'Red');     
+        $('#Valor').after('<span class="error" style="font-weight:bold;font-style:italic" >Valor é Obrigatório!</span>');
 
         isValid = false;
     }
@@ -212,14 +218,12 @@ function validatePrd() {
     if ($('#DdlCategoria').val().trim() == "") {
 
         $('#DdlCategoria').css('border-color', 'Red');
+        $('#DdlCategoria').after('<span class="error" style="font-weight:bold;font-style:italic" >Categoria é Obrigatório!</span>');
 
         isValid = false;
     }
     else {
         $('#DdlCategoria').css('border-color', 'lightgrey');
     }
-
-
-
     return isValid;
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QaZQybs4BgYlDZHu7WJJ1grmA4doN61QX4Q57ihOptDre4KH/sPHMz/XLLOoRIVZjWdtD4QfGvJ4XR5SH4ti3A==",
+  "dgSpecHash": "9mivmcQFuAUjh/ZuzfJt+v0Ik80JwkLqGoctyLzVJqmFl3Wbvq6IxVOncuh9CpjnaYRDLLbsIdAe5BSg3tj10Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Matheus\\source\\repos\\AvalTecnSystem\\Web\\Web.csproj",
   "expectedPackageFiles": [
@@ -215,6 +215,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.4.1\\swashbuckle.aspnetcore.swaggerui.5.4.1.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\sweetalert\\1.0.0\\sweetalert.1.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

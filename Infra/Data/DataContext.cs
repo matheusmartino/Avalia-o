@@ -1,5 +1,6 @@
 ﻿using Domain.Entities;
 using Infra.Config;
+using Infra.Repository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace Infra.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             ////Configuração de DELETE em Cascata
             foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
             {
@@ -31,5 +33,6 @@ namespace Infra.Data
             modelBuilder.ApplyConfiguration(new ProdutoConfig());
             modelBuilder.ApplyConfiguration(new CategoriaConfig());
         }
+       
     }
 }

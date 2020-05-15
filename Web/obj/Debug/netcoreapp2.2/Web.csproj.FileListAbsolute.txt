@@ -35,5 +35,4 @@ C:\Users\Matheus\source\repos\AvalTecnSystem\Web\obj\Debug\netcoreapp2.2\Web.dll
 C:\Users\Matheus\source\repos\AvalTecnSystem\Web\obj\Debug\netcoreapp2.2\Web.pdb
 C:\Users\Matheus\source\repos\AvalTecnSystem\Web\obj\Debug\netcoreapp2.2\Razor\Views\Categoria\Index.cshtml.g.cs
 C:\Users\Matheus\source\repos\AvalTecnSystem\Web\obj\Debug\netcoreapp2.2\Razor\Views\Produto\Index.cshtml.g.cs
-C:\Users\Matheus\source\repos\AvalTecnSystem\Web\bin\Debug\netcoreapp2.2\Web.xml
 C:\Users\Matheus\source\repos\AvalTecnSystem\Web\obj\Debug\netcoreapp2.2\Web.csproj.CoreCompileInputs.cache

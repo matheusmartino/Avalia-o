@@ -8,6 +8,7 @@ $(document).ready(function () {
 
 });
 
+
 //Load Categorias
 function loadDdlCategoria() {
     $.ajax({
@@ -30,12 +31,13 @@ function loadDdlCategoria() {
 
 //Load Categorias paginadas
 function loadDataPagination(pag) {
-    $.ajax({
+    
+    $.ajax({       
         url: "categorias/paginacao/" + pag,
         type: "GET",
         contentType: "application/json;charset=utf-8",
         dataType: "json",
-        success: function (result) {
+        success: function (result) {            
             console.log(result);
             var html = '';
             $.each(result.categoria, function (key, item) {
@@ -46,7 +48,7 @@ function loadDataPagination(pag) {
                 html += '</tr>';
             });
             $('#tblCategoria').html(html);
-
+          
             var htmlPg = '';
             for (i = 1; i <= result.paginas; i++) {
                 
@@ -59,13 +61,12 @@ function loadDataPagination(pag) {
                 htmlPg += '<a class="page-link active" href="#" onClick=" loadDataPagination(' + i + ')">' + i + '</a > '
                 htmlPg += '</li>'
             }
-            $('#pagination').html(htmlPg);
-
+            $('#pagination').html(htmlPg);            
         },
         error: function (errormessage) {
-            alert(errormessage.responseText);
+            alert(errormessage.responseText);            
         }
-    });
+    });   
 }
 
 //Nova Categoria
@@ -190,21 +191,13 @@ function clearTextBox() {
 //Validando Preenchimento
 function validate() {
     var isValid = true;
+    $(".error").remove();
+
     if ($('#Categoria').val().trim() == "") {
 
         $('#Categoria').css('border-color', 'Red');
-
-        $('#frmCategoria').validate({
-            errorElement: 'span',
-            errorClass: 'help-inline',
-            rules: {
-                Categoria: "required",
-            },
-            messages: {
-                Categoria: "Categoria Obrigatória !",
-            },
-        })
-
+        $('#Categoria').after('<span class="error" style="font-weight:bold;font-style:italic" >Categoria é Obrigatório!</span>');
+       
         isValid = false;
     }
     else {
