@@ -15,7 +15,7 @@ Este setup foi feito para Windows, outras plataformas pendente de realização d
 1. Instale Visual Studio 2019 Comunity.
 2. Instale .NET Core SDK 2.2 for VS2019.
 4. Open the `.sln` file and wait for nuget package restore.
-5. Configurea Connection String do Banco MySql Local passando as entradas no appsettings.json.
+5. Configure a Connection String do Banco MySql Local passando as entradas no appsettings.json.
 ```
    "ConexaoMySql": {
     "MySqlConnectionString": "Server=localhost;DataBase=AvalTecSysDb;Uid=*******;Pwd=********"
